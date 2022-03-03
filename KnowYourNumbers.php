@@ -129,7 +129,6 @@ www.cdc.gov/diabetes/takethetest/about-the-test.html
 
 HEREDOC;
 			$mailto_email_subject = urlencode("Your Prediabetes Test Results Score");
-			$mailto_email_body = urlencode($mailto_email_body);
 			$mailto_url = "mailto:?subject=$mailto_email_subject&body=$mailto_email_body";
 			
 			$content = <<<HEREDOC
@@ -266,5 +265,7 @@ HEREDOC;
 			$this->onKnowYourNumbersCompleted($record, $event_id, $repeat_instance);
 		}
 	}
+	
+	
 	
 }
