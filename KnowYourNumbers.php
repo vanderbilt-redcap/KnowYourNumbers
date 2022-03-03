@@ -135,7 +135,7 @@ HEREDOC;
 			$mailto_email_body = rawurlencode(htmlspecialchars_decode($mailto_email_body));
 			$mailto_url = "mailto:?subject=$mailto_email_subject&body=$mailto_email_body";
 			
-			carl_log("\$mailto_url: $mailto_url");
+			// carl_log("\$mailto_url: $mailto_url");
 			
 			$content = <<<HEREDOC
 			<div class='subdiv'>
